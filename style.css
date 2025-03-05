@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+}
+
+#overlay {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scale(0.95);
+}
+
+#overlay.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+input, textarea {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+input:focus, textarea:focus {
+    border-color: #14b8a6;
+    box-shadow: 0px 0px 8px rgba(20, 184, 166, 0.5);
+}
+
+button {
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 10px rgba(20, 184, 166, 0.3);
+}
+
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 12px;
+    padding: 16px;
+    background: linear-gradient(135deg, #2b2b3a, #3d3d54);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(20, 184, 166, 0.4);
+}
+
+.vacant {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+#closebtn {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#closebtn:hover {
+    color: #ff6b6b;
+}
